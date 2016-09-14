@@ -24,9 +24,6 @@ def busLocation(bus,coordinate):
 mta_key = sys.argv[1]
 bus_line = sys.argv[2]
 
-print "MTA KEY: " + mta_key
-print "BUS LINE: " + bus_line
-
 #download data
 
 url = "http://bustime.mta.info/api/siri/vehicle-monitoring.json?key=" + mta_key + '&VehicleMonitoringDetailLevel=calls&LineRef=' + bus_line 

@@ -26,4 +26,23 @@ Personal MTA KEY and Bus line are taken from the terminal input with sys.argv. F
 
 ⋅⋅⋅ *busLocation()* : takes the VehicleActivity of a bus (in dictionary format) and returns its latitude of longitude
 
- 
+##Assigment 2
+
+**Script:** `get_bus_info.py`
+
+The script reports for every bus on a bus line, their current position with lat and long, along with the next stop.
+
+```
+python get_bus_info.py <MTA_KEY> <BUS_LINE> <BUS_LINE>.csv
+```
+
+**Tasks:**
+
+On top of the task for the **Assigment 1**:
+
+* Create two functions :
+
+⋅⋅⋅ *busStopName()* : takes a VehicleActivity of a bus (in dictionary format) and returns its stop name.
+
+⋅⋅⋅ *busStopStatus()* : takes a VehicleActivity of a bus (in dictionary format) and returns its stop status.
+

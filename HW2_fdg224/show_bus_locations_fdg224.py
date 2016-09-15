@@ -8,11 +8,11 @@ except ImportError:
     import urllib.request as urllib
 
 #functions
-def getBusList(rawMTAapi):
+def getBusList(parsedMTAapi):
     ''' This function takes a parsed input as given by the MTA API for a single busline
     and returns a list of buses, where every element of a list is the VehicleActivity 
     of the bus'''
-    return rawMTAapi['Siri']['ServiceDelivery']['VehicleMonitoringDelivery'][0]['VehicleActivity']
+    return parsedMTAapi['Siri']['ServiceDelivery']['VehicleMonitoringDelivery'][0]['VehicleActivity']
 
 def busLocation(bus,coordinate):
     '''This function takes the VehicleActivity of a bus (in dictionary format) and returns

@@ -2,6 +2,8 @@
 import os
 import sys
 import json
+import csv
+
 try:
     import urllib2 as urllib
 except ImportError:
@@ -34,7 +36,7 @@ def busStopStatus(bus):
 #set arguments
 mta_key = sys.argv[1]
 bus_line = sys.argv[2]
-#THIRD ARGUMENT CSV!
+file = sys.argv[3]
 
 
 #download data
@@ -47,13 +49,29 @@ parseData = json.loads(rawData)
 #create a list of buses 
 busesList = getBusList(parseData)
 
-print 'Latitude,Longitude,Stop Name,Stop Status'
-busID = 0
-while busID < len(busesList):
+
+#write to csv
+#source: https://docs.python.org/2/library/csv.html
+with open(file, 'wb') as csvfile:
+    filewriter = csv.writer(csvfile, delimiter=',',quoting=csv.QUOTE_MINIMAL)
+    filewriter.writerow(['Latitude','Longitude','Stop Name','Stop Status'])
+    busID = 0
+    '''
     lat = busLocation(busesList[busID],'Latitude')
     longi =  busLocation(busesList[busID],'Longitude')
     stopName = busStopName(busesList[busID])
     stopStatus = busStopStatus(busesList[busID])
-    print '%2.6f,%2.6f,%s,%s' %(lat,longi,stopName,stopStatus)
-    busID += 1
+    filewriter.writerow([lat,longi,stopName,stopStatus])
+
+
+    '''
+    while busID < len(busesList):
+         lat = busLocation(busesList[busID],'Latitude')
+         longi =  busLocation(busesList[busID],'Longitude')
+         stopName = busStopName(busesList[busID])
+         stopStatus = busStopStatus(busesList[busID])
+         filewriter.writerow([lat,longi,stopName,stopStatus])
+         busID += 1
+
+    
 

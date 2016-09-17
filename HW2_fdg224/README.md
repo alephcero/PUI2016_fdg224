@@ -46,3 +46,15 @@ On top of the task for the **Assigment 1**:
 
 ⋅⋅⋅ *busStopStatus()* : takes a VehicleActivity of a bus (in dictionary format) and returns its stop status.
 
+
+##Assigment 3
+
+**File:** `HW2_3_fdg224.ipynb`
+
+The Jupyter Notebook checks if a Enviromental Variable is declared by printin it, reads a CSV file from the CUSP Data Facility for NYS Math Test Results between 2006 and 2011, select columns for "Number of student tested" and "Mean Scale Score", and plot them. An hypothesis for the graph could be to check wether the size of the school (using the Number of student tested as a proxy) as a relation with the performance of the students in the test.
+
+### Extra credit
+
+**File:** `HW2_3_fdg224.ipynb`
+
+In the same file, dates of the results are parsed in order to format the values properly as years. Then only English Proficent Schools and 8 graders are selected. Finally, a plot is rendered showing improvement of the mean score for each Borough 

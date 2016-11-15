@@ -1,0 +1,22 @@
+# This is my review of Felipe's plot exercise.
+
+![image of Felipe's plot](/HW7_fdg224/Felipe's Plot.png?raw=true "Felipe's Plot")
+
+Impressive analysis!
+
+## CLARITY
+The plots of time of day on left and right are very good. They are clear and do a good job of showing what you intend - what times of day the most trips are being taken. It's a good way of showing hours of the day relative to each other. Might also be interesting to put all 24 hours on one graph.
+
+The charts in the middle are very hard to understand. I still don't get what they're showing actually, though maybe I could figure it out by looking at the data and/or reading all your code. What is the unit? Mean number of trips or length of trip? Is it showing length of trip from each station no matter where the passenger gets off?
+
+## AESTHETICS
+It's simple. No complaints on the visuals. Time of day visualization is very effective. I think the graphic needs to clarify which subway line it depicts.
+
+The addition of the subway map was very helpful.
+
+## HONESTY
+I can't really comment on the honesty of the middle two charts, since I don't understand them. Actually, lack of clarity is a form of dishonesty, if it's possible you might mislead people.
+
+The outer time of day charts very effectively display the information intended. They give an accurate representation of when people use the subway.
+
+- Adrian Dahlin

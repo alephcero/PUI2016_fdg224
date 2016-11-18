@@ -10,3 +10,6 @@ I worked with Sokratis Papadopoulos (Sp4356) on the Likelihood ratio test and ch
 
 Paper is published:
 https://www.authorea.com/users/106723/articles/134095/_show_article
+
+# FBB review
+very good. there are a few comments in the authorea paper. 
